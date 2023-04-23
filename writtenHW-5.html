@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Written Homework 5</title>
+</head>
+<body>
+    <header>Written Homework Week 5</header>
+
+    <h1>Barbie's Wardrobe</h1>
+        <p>First we create barbie, an object where the whole app will revolve around. Our barbie object has a lot of different properties, such as wardrobe [], assets[], wallet (num), totalIncome (num)
+            We create a class Career which takes in name, income, and id in it's constructor. An empty career [] is then defined and later populated by the different career descriptions we were given. One of which will eventually be assigned to our 
+            initial barbie object. We go on by creating other classes such as Clothing, Assets, Cars and then pushed to each corresponding array property in our barbie object.
+            While we are 'adding' these properties inside barbie object. We are also updating the DOM by calling the render() method within barbie. This method updates what we (the clients) see in the DOM, made possible by
+            us selecting a div element in our html and storing it in a variable as another property of barbie object. Essentially we are trying to put everything inside our barbie object as properties, wether they be variables that points to a cached element, or a
+            method that updates 'local' properties. We do this to keep everything 'clean' and manage all the data within our object, making it impossible for other 'objects' to access them. Putting 'Encapsulation' OOP Principle in practice.
+            The static method dynamically updates the DOM depending on the changes we made in the state of our object (barbie), and it is attached to every listener functions so that it reflects the changes immediately. 
+        </p>
+
+
+    <h1>Tomagotchi</h1>
+        <p>In this app we are first greeted with an intro that defines what we need to do to keep our tomagochi alive. It disappears and then we are shown a carousel that reflects an array of images that we can choose from for our background. We then instantiate the Tamagotchi class to create our first pet. Some of the properties on this pet, namely, the hunger, sleepiness and boredom increments on a every set intervals. We have to keep these within certain levels, using the buttons on the dom that call on our pet's method which controls each corresponding properties. The game basically terminates when our pet dies aka when we are unable to control the ascending properties. We see the updated states in our webpage because all the methods of our tomagotchi has the `updateStatsOnDom` function that reflects all that happened within and renders it to our screen.</p>
+
+    <h1>Connect Four</h1>
+        <p> In <em>Connect Four App</em> we create the structure of the app with html and css, the rows and columns, the markers and the label that represents that state of the game. These are then represented in the our javascript as, 2d array : the rows and columns, div : marker that corresponds to each column, div : cached using document selector. Everytime we click on a marker we determine it's corresponding location in the 2d array by taking the indexOf(evt.target) where evt.target is the div itself enclosed in an array cached in memory. that was clicked. Since every column in our game is represented by each array element of the outer array, all we have to do is determine where the first 0 element in the inner array to determine where the 'coin' goes. After everytime we 'drop' a coin, we call on multiple functions, one in charge for checking if there is a winner, and another that renders the new state of the game in our screens. </p>
+</body>
+</html>
