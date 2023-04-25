@@ -7,6 +7,9 @@ let str =
 //return = string
 
 function mostFrequentWord(str) {
+  /*--- EDGE CASE---*/
+  if (str.length === 0) return;
+
   let wordArr = str.toLowerCase().split(" "); //outputs array of words in lowercase
 
   //obj to hold counters
